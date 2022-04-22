@@ -16,5 +16,8 @@ if __name__== '__main__':
     print(raimundo.idade)
     for filho in raimundo.filhos:
         print(filho.nome)
-
+    vital.sobrenome = 'Moreira'
+    del raimundo.filhos ## excluindo um atributo do objeto dinamicamente
+    print(vital.__dict__)
+    print(raimundo.__dict__)
 
