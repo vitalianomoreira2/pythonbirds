@@ -1,4 +1,5 @@
 class Pessoa:
+    olhos = 2
     def __init__(self, *filhos,nome=None, idade=34):
         self.idade = idade
         self.nome = nome
@@ -20,4 +21,9 @@ if __name__== '__main__':
     del raimundo.filhos ## excluindo um atributo do objeto dinamicamente
     print(vital.__dict__)
     print(raimundo.__dict__)
-
+    Pessoa.olhos = 1
+    print(Pessoa.olhos)
+    print(Pessoa.olhos)
+    print(vital.olhos)
+    print(raimundo.olhos)
+    print(id(Pessoa.olhos), id(raimundo.olhos), id(vital.olhos))
