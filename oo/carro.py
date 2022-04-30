@@ -23,7 +23,7 @@ O L
  S
 
     Exemplo:
-    # Testando o motor
+    # Testando o motor:
     >>> motor = Motor()
     >>> motor.velocidade
     0
